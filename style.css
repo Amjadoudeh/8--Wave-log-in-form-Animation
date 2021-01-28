@@ -32,3 +32,6 @@ body {
   text-decoration: none;
   color: lightskyblue;
 }
+.form-control {
+  position: relative;
+}
