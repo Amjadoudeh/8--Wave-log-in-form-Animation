@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -23,7 +22,8 @@ body {
 }
 
 .container h1 {
-  font-family: "Muli";
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
 
   margin-bottom: 15px;
   text-align: center;
@@ -34,4 +34,53 @@ body {
 }
 .form-control {
   position: relative;
+  margin: 20px 0 40px;
+  width: 300;
+}
+.form-control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 2px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+  color: #fff;
+  font-size: medium;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  background-color: lightskyblue;
+  padding: 5px;
+  font-family: inherit;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(57, 61, 65);
+  border: 0;
+  border-radius: 5px;
+}
+
+.button:hover {
+  outline: none;
+  opacity: 0.8;
+}
+.button:active {
+  transform: scale(0.94);
+}
+
+.text {
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.container a:hover {
+  opacity: 0.7;
 }
