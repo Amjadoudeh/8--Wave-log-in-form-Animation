@@ -17,7 +17,7 @@ body {
 
 .container {
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
+  padding: 50px 35px;
   border-radius: 5px;
 }
 
@@ -25,7 +25,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 2px;
 
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-align: center;
 }
 .container a {
@@ -50,9 +50,8 @@ body {
 
 .form-control input:focus,
 .form-control input:valid {
-  outline: none;
-  color: #fff;
-  font-size: medium;
+  outline: 0;
+  border-bottom-color: lightblue;
 }
 
 .button {
@@ -78,9 +77,31 @@ body {
 
 .text {
   margin-top: 30px;
-  letter-spacing: 0.5px;
 }
 
 .container a:hover {
   opacity: 0.7;
+}
+
+.form-control label {
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-20px);
+}
+.form-control a {
+  display: block;
+  margin: inherit;
 }
